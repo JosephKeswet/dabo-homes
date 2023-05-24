@@ -7,7 +7,7 @@ type Props = {
 
 const Card = ({image}: Props) => {
   const SeemoreButton = () => (
-    <button className="w-[12.75rem] h-[3.75rem] rounded-[1.25rem] bg-[#DFAA5B]" onClick={() => {}}>
+    <button className="w-[12.75rem] h-[3.75rem] rounded-[1.25rem] bg-[#DFAA5B] text-white text-2xl" onClick={() => {}}>
       Seemore
     </button>
   )
