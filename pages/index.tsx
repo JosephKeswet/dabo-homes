@@ -3,9 +3,43 @@ import DropDown from '@/components/DropDown'
 import Image from 'next/image'
 import KitchenIcon from '../assets/icons/Kitchen.svg'
 import Bedroom from '../assets/Bedroom.svg'
+import Livingroom from '../assets/Livingroom.svg'
+import Dinning from '../assets/Dinning.svg'
+import Kitchen from '../assets/Kitchen.svg'
+
+
+
 
 
 export default function Home() {
+  const cardInfo = [
+    {mainText: 'Bedroom',subText: `Our Bedrooms are fully equipped with fully 
+    functional Air conditioners, A king sized bed 
+    with 7 pillows and various duvets, a TV console
+    and an Ensuite bathroom.`,
+    image: Bedroom
+  },
+    {mainText:"Living Room",subText: `Possessing a spacious environ, our living rooms
+    are properly equipped with a 72inch TV set, a
+    proper set of Sofas, a dinning section, bean bags
+    and adorned with the best of artworks to your 
+    taste. `,
+    image: Livingroom
+  },
+    {mainText: "Dinning Section",subText:`Family and friends are not left out in our apartment
+    plans, sit and eat together away from home but just 
+    like home with our 7 seat capacitated dinning set
+    `,
+    image: Dinning
+  },
+    {mainText: "Kitchen",subText:`We know how it can be being away from home but
+    our well-equipped, Ensuite Kitchen will bring home
+    to you, it is fully stacked with pots, plates, an electric
+    cooker, dishwasher and many more`,
+    image: Kitchen
+  }
+
+  ]
   const Facilities = () => (
     <div>
         <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
@@ -27,6 +61,7 @@ export default function Home() {
     >
       <div className="relative inset-0 bg-[url('../assets/HomeBackground.svg')] w-auto h-[18.5rem] 
       max-[280px]:h-[14rem]
+      max-[540px]:bg-cover
       md:h-[42rem] md:bg-contain 
       lg:h-[65rem] bg-no-repeat bg-contain lg:bg-cover
       ">
@@ -56,8 +91,16 @@ export default function Home() {
       <div className='mt-4 lg:mt-24'>
           <h1 className='text-[#DFAA5B] text-center text-[1rem] md:text-[2rem] lg:text-[2rem] '>Our Apartment</h1>
           <div className='flex flex-wrap justify-center gap-6 md:gap-20 items-center mt-4 lg:mt-20 '>
-            {[1,2,3,4].map(() => (<Card image={Bedroom}/>))}
+            {cardInfo.map((item:any) => (<Card mainText={item?.mainText} subText={item?.subText} image={item?.image}/>))}
           </div>
+      </div>
+      <div className='mb-14 lg:mb-56 mt-8 lg:mt-52'>
+        <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>
+        <div className='flex justify-center mt-4 md:mt-8'>
+          <button className='w-[8.5rem] h-6 md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
+            Book a stay Now
+          </button>
+        </div>
       </div>
     </main>
   )
