@@ -1,13 +1,15 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {
   image:any,
   mainText:string
   subText:string
+  route:string
 }
 
-const Card = ({image,mainText,subText}: Props) => {
+const Card = ({image,mainText,subText,route}: Props) => {
   const SeemoreButton = () => (
     <button className="w-[3.94rem] h-[1.125rem] md:w-[12.7rem] md:h-[3.75rem] lg:w-[12.75rem] lg:h-[3.75rem] rounded-[1.25rem] bg-[#DFAA5B] text-white text-[0.375rem] md:text-2xl lg:text-2xl" onClick={() => {}}>
       See more
@@ -26,9 +28,9 @@ const Card = ({image,mainText,subText}: Props) => {
               height={453}
               alt="Card Image" />
             </div>
-            <div className='absolute bottom-3 md:bottom-14 lg:bottom-3 left-1 md:left-6 lg:left-6 '>
+            <Link href={route} className='absolute bottom-3 md:bottom-14 lg:bottom-3 left-1 md:left-6 lg:left-6 '>
               <SeemoreButton/>
-            </div>
+            </Link>
           </div>
           <div className=' flex justify-center items-center mt-0 lg:mt-10'>
             <p className='text-center text-white text-[0.375rem] md:text-2xl lg:text-2xl  w-[8rem] md:w-[26rem] lg:w-[31.5rem] font-Lexend font-medium leading-[0.375rem] '>{subText}</p>

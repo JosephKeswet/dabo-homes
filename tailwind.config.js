@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'Lexend': ['Lexend', 'sans-serif'],
+      'Inter': ['Inter', 'sans-serif']
     },
     extend: {
       backgroundImage: {

@@ -17,26 +17,30 @@ export default function Home() {
     functional Air conditioners, A king sized bed 
     with 7 pillows and various duvets, a TV console
     and an Ensuite bathroom.`,
-    image: Bedroom
+    image: Bedroom,
+    route:'/bedroom'
   },
     {mainText:"Living Room",subText: `Possessing a spacious environ, our living rooms
     are properly equipped with a 72inch TV set, a
     proper set of Sofas, a dinning section, bean bags
     and adorned with the best of artworks to your 
     taste. `,
-    image: Livingroom
+    image: Livingroom,
+    route:'/livingroom'
   },
     {mainText: "Dinning Section",subText:`Family and friends are not left out in our apartment
     plans, sit and eat together away from home but just 
     like home with our 7 seat capacitated dinning set
     `,
-    image: Dinning
+    image: Dinning,
+    route:'/dinning'
   },
     {mainText: "Kitchen",subText:`We know how it can be being away from home but
     our well-equipped, Ensuite Kitchen will bring home
     to you, it is fully stacked with pots, plates, an electric
     cooker, dishwasher and many more`,
-    image: Kitchen
+    image: Kitchen,
+    route:'/kitchen'
   }
 
   ]
@@ -91,7 +95,13 @@ export default function Home() {
       <div className='mt-4 lg:mt-24'>
           <h1 className='text-[#DFAA5B] text-center text-[1rem] md:text-[2rem] lg:text-[2rem] '>Our Apartment</h1>
           <div className='flex flex-wrap justify-center gap-6 md:gap-20 items-center mt-4 lg:mt-20 '>
-            {cardInfo.map((item:any) => (<Card mainText={item?.mainText} subText={item?.subText} image={item?.image}/>))}
+            {cardInfo.map((item:any) => (
+            <Card 
+            mainText={item?.mainText} 
+            subText={item?.subText} 
+            image={item?.image}
+            route={item?.route}
+            />))}
           </div>
       </div>
       <div className='mb-14 lg:mb-56 mt-8 lg:mt-52'>
