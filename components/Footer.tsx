@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {}
 
 const Footer = (props: Props) => {
-    const routes = ["Home", "Rooms", "Contact", "About Us"]
+    const routes = ["Home", "Rooms", "Contact", "About Us"];
   return (
     <div>
         <div className='flex justify-center items-center w-full h-[4rem] md:h-[10rem] lg:h-[15rem] bg-[#111111]'>
