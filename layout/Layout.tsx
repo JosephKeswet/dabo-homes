@@ -12,6 +12,8 @@ const Layout = ({children}:any) => {
   const livingroomRoute = router.pathname === '/livingroom'
   const kitchenRoute = router.pathname === '/kitchen'
   const dinningRoute = router.pathname === '/dinning'
+  const aboutRoute = router.pathname === '/about'
+
 
 
 
@@ -21,7 +23,7 @@ const Layout = ({children}:any) => {
         {(bedroomRoute || livingroomRoute || kitchenRoute || dinningRoute) && <SingleTopSection/>}
         <div>{children}</div>
         <div className=''>
-            <Footer/>
+         <Footer/>
         </div>
     </div>
   )

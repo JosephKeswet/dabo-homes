@@ -13,7 +13,7 @@ import Link from 'next/link';
 type Props = {}
 
 const SingleTopSection = (props: Props) => {
-    const routes = [{title:"Home",route:'/'}, {title:"Rooms",route:'#'}, {title:"Contact",route:'#'},{title:"About Us",route:"#"}];
+    const routes = [{title:"Home",route:'/'}, {title:"Rooms",route:'#'}, {title:"Contact",route:'/contact'},{title:"About Us",route:"/about"}];
 
     
   return (
