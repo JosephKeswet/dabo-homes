@@ -3,6 +3,11 @@ import LocationIcon from '../assets/icons/Location.svg'
 import PhoneIcon from '../assets/icons/Phone.svg'
 import EmailIcon from '../assets/icons/Email.svg'
 import Image from 'next/image'
+import BedroomCarousel from '@/components/BedroomCarousel'
+import DinningCarousel from '@/components/DinningCarousel'
+import LivingroomCarousel from '@/components/LivingroomCarousel'
+import KitchenCarousel from '@/components/KitchenCarousel'
+import Footer from '@/components/Footer'
 
 
 
@@ -12,7 +17,7 @@ const contact = (props: Props) => {
   return (
     <div>
             <div className="min-w-screen bg-cover  h-full bg-[url('../assets/Background.svg')]">
-                <div className='h-screen lg:h-auto md:pt-20 '>
+                <div className=' lg:h-auto md:pt-20 '>
                     <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>Contact Us</h1>
                     <h2 className='text-base md:text-[2.5rem] lg:text-[2.825rem] text-center text-[#DFAA5B] font-Lexend font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>For Bookings & Reservations</h2>
                     <div className='flex justify-center pt-2 lg:pt-[7rem] lg:pb-[10.875rem]'>
@@ -69,7 +74,13 @@ const contact = (props: Props) => {
                         Book a stay Now
                     </button>
                     </div>
-                    <h1 className='mt-6 md:mt-[5rem] lg:mt-[8rem] text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>Our Apartment</h1>
+                    <h1 className='mt-6 lg:pb-[3.75rem] md:mt-[5rem] lg:mt-[8rem] text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>Our Apartment</h1>
+                    <div className='flex flex-col gap-16 lg:gap-36 mx-4 pb-8 lg:pb-48 lg:mx-44'>
+                        <BedroomCarousel/>
+                        <DinningCarousel/>
+                        <LivingroomCarousel/>
+                        <KitchenCarousel/>
+                    </div>
                 </div>
                 </div>
             </div>

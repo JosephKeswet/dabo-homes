@@ -12,7 +12,7 @@ const Layout = ({children}:any) => {
   const livingroomRoute = router.pathname === '/livingroom'
   const kitchenRoute = router.pathname === '/kitchen'
   const dinningRoute = router.pathname === '/dinning'
-  const aboutRoute = router.pathname === '/about'
+  const contact = router.pathname === '/contact'
 
 
 

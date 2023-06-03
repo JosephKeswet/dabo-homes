@@ -7,6 +7,11 @@ import Livingroom from '../assets/Livingroom.svg'
 import Dinning from '../assets/Dinning.svg'
 import Kitchen from '../assets/Kitchen.svg'
 import Link from 'next/link'
+import PoolIcon from '../assets/icons/Pool.svg'
+import WifiIcon from '../assets/icons/Wifi.svg'
+import GymIcon from '../assets/icons/Gym.svg'
+
+
 
 
 
@@ -45,12 +50,12 @@ export default function Home() {
   }
 
   ]
-  const Facilities = () => (
+  const Facilities = (img:any) => (
     <div>
         <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
             <div className='w-2 h-3 md:w-auto lg:w-auto'>
               <Image
-                src={KitchenIcon}
+                src={img}
                 width={28}
                 height={36}
                 alt="Kitchen Icon"
@@ -119,9 +124,52 @@ export default function Home() {
           </div>
         </div>
         <div className='flex justify-center'>
-          <div className='shadow-xl flex items-center justify-center gap-4 md:gap-10 lg:gap-24 absolute top-[17rem] max-[280px]:top-[24rem] max-[360px]:top-[15rem] max-[375px]:top-[16rem] md:top-[34rem] lg:top-[58.2rem] z-30  w-44 md:w-[38rem] lg:w-[48rem] h-[2.125rem]  md:h-[6rem] lg:h-[6.5rem] rounded-[0.625rem] bg-[#000000]'>
-            {[1,2,3,4].map((index:any) => (<Facilities key={index}/>))}
-          </div>
+          <div className='shadow-xl flex flex-row items-center justify-center gap-4 md:gap-10 lg:gap-24 absolute top-[17rem] max-[280px]:top-[24rem] max-[360px]:top-[15rem] max-[375px]:top-[16rem] md:top-[34rem] lg:top-[58.2rem] z-30  w-44 md:w-[38rem] lg:w-[48rem] h-[2.125rem]  md:h-[6rem] lg:h-[6.5rem] rounded-[0.625rem] bg-[#000000]'>
+          <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
+            <div className='w-2 h-3 md:w-auto lg:w-auto'>
+                  <Image
+                    src={KitchenIcon}
+                    width={28}
+                    height={36}
+                    alt="Kitchen Icon"
+                  />
+                </div>
+                <h1 className='text-[#DFAA5B] text-[0.313rem] md:text-2xl lg:text-2xl'>Kitchen</h1>
+            </div>
+            <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
+            <div className='w-2 h-3 md:w-auto lg:w-auto'>
+              <Image
+                src={PoolIcon}
+                width={36}
+                height={36}
+                alt="Kitchen Icon"
+              />
+            </div>
+            <h1 className='text-[#DFAA5B] text-[0.313rem] md:text-2xl lg:text-2xl'>Pool</h1>
+        </div>          
+        <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
+            <div className='w-2 h-3 md:w-auto lg:w-auto'>
+              <Image
+                src={WifiIcon}
+                width={28}
+                height={36}
+                alt="Kitchen Icon"
+              />
+            </div>
+            <h1 className='text-[#DFAA5B] text-[0.313rem] md:text-2xl lg:text-2xl'>Wifi</h1>
+        </div>
+        <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
+            <div className='w-2 h-3 md:w-auto lg:w-auto'>
+              <Image
+                src={GymIcon}
+                width={28}
+                height={36}
+                alt="Kitchen Icon"
+              />
+            </div>
+            <h1 className='text-[#DFAA5B] text-[0.313rem] md:text-2xl lg:text-2xl'>Gym</h1>
+        </div>
+        </div>
         </div>
       </div>
       {/* Our appartments */}

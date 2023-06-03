@@ -6,11 +6,41 @@ import Image from 'next/image'
 import BedroomCarousel from '@/components/BedroomCarousel'
 import Footer from '@/components/Footer'
 import Background from '../assets/Background.svg'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import Dinning2 from '../assets/Dinning2.jpg';
+import Dinning3 from '../assets/Dinning3.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import DinningCarousel from '@/components/DinningCarousel'
+import LivingroomCarousel from '@/components/LivingroomCarousel'
+import KitchenCarousel from '@/components/KitchenCarousel'
+import Link from 'next/link'
 
 
 type Props = {}
 
 const About = (props: Props) => {
+    const renderCustomNextArrow = (onClickHandler:any, hasPrev:any, label:any) => {
+        return (
+        <div
+        onClick={onClickHandler} 
+        className='absolute  top-[50%] md:top-[45%]  lg:top-[32rem] left-[85%] lg:left-[90%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+            <FontAwesomeIcon icon={faChevronRight} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
+        </div>)
+    }
+
+    const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
+        return (
+            <div>
+                <div 
+                onClick={onClickHandler}
+                className='absolute z-30 top-[50%] md:top-[45%] lg:top-[32rem] left-[4%] lg:left-[3%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+                    <FontAwesomeIcon icon={faChevronLeft} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
+                </div>
+            </div>
+        )
+    }
   return (
     <div className="min-w-screen bg-cover  h-full bg-[url('../assets/Background.svg')]">
        {/* <div className='bg-cover bg-no-repeat bg-center h-auto'>
@@ -19,7 +49,7 @@ const About = (props: Props) => {
         <Image src={Dinning} alt="Dinning" />
       </div> */}
       <div className=''>
-            <div className='w-full md:pt-16 pb-[10rem] lg:pb-[30rem]'>
+            <div className='w-full md:pt-16 pb-[1rem] lg:pb-[10rem]'>
                 <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>About Us</h1>
                 <h2 className='text-base md:text-[4.3125rem] text-center text-[#DFAA5B] font-Lexend font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>Welcome to idabo homes</h2>
                 <div className='w-screen flex justify-center md:mt-4 lg:mt-7'>
@@ -60,13 +90,24 @@ const About = (props: Props) => {
                     </div>
                 </div>
             </div>
-            {/* <div className='absolute  z-50'>
-            <BedroomCarousel/>
-            </div> */}
-      </div>
-      {/* <div className='absolute z-50 bottom-0'>
+            <div className='flex flex-col gap-16 lg:gap-36 mx-4 pb-8 lg:pb-48 lg:mx-44'>
                 <BedroomCarousel/>
-                </div> */}
+                <DinningCarousel/>
+                <LivingroomCarousel/>
+                <KitchenCarousel/>
+            </div>
+            <div className='pb-14 lg:pb-56 mt-8 lg:mt-52'>
+                <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>
+                <div className='flex justify-center mt-4 md:mt-8'>
+                <Link href='/book'>
+                    <button className='w-[8.5rem] h-6 md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
+                    Book a stay Now
+                    </button>
+                </Link>
+                </div>
+      </div>
+      </div>
+  
             {/* <div className='absolute right-0 left-0 bottom-0 top-[60rem] lg:top-[200rem]'>
                 <Footer/>
             </div> */}

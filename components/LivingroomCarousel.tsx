@@ -4,15 +4,15 @@ import Image from 'next/image';
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import Bedroom2 from '../assets/Bedroom2.jpg';
-import Bedroom3 from '../assets/Bedroom3.jpg';
-import Bedroom4 from '../assets/Bedroom4.jpg';
-import Bedroom5 from '../assets/Bedroom5.jpg';
-import Bedroom6 from '../assets/Bedroom6.jpg';
+import Livingroom2 from '../assets/Livingroom2.jpg';
+import Livingroom3 from '../assets/Livingroom3.jpg';
+import Livingroom4 from '../assets/Livingroom4.jpg';
+import Livingroom5 from '../assets/Livingroom5.jpg';
+import Livingroom6 from '../assets/Livingroom6.jpg';
 
 type Props = {}
 
-const BedroomCarousel = (props: Props) => {
+const LivingroomCarousel = (props: Props) => {
     const renderCustomNextArrow = (onClickHandler:any, hasPrev:any, label:any) => {
         return (
         <div
@@ -35,7 +35,7 @@ const BedroomCarousel = (props: Props) => {
     }
   return (<div>
         <div className='relative'>
-            <h1 className='absolute z-30 top-5 left-6 md:top-12 md:left-10 lg:top-8 lg:left-20 text-[#FFFFFF] font-Lexend font-normal md:text-[2rem] lg:text-[2rem]'>Bedroom</h1>
+            <h1 className='absolute z-30 top-5 left-6 md:top-12 md:left-10 lg:top-8 lg:left-20 text-[#FFFFFF] font-Lexend font-normal md:text-[2rem] lg:text-[2rem]'>Living Room</h1>
             <Carousel
             renderArrowNext={renderCustomNextArrow}
             renderArrowPrev={renderCustomPrevArrow}
@@ -46,16 +46,34 @@ const BedroomCarousel = (props: Props) => {
             autoPlay={true}
             infiniteLoop={true}
             >
-                <div>
-                    <Image src={Bedroom2}
+            <div>
+                        <Image 
+                        src={Livingroom2} 
+                        alt='Bedroom' 
+                        className='h-[15rem] md:h-[35rem] lg:h-[44.7rem] rounded-[2.625rem]'
+                        />
+                    </div>
+                    <div>
+                    <Image src={Livingroom3} alt='Bedroom'
                     className='h-[15rem] md:h-[35rem] lg:h-[44.7rem] rounded-[2.625rem]'
-                    alt='Bedroom'/>
-                </div>
-                       <div>
-                    <Image src={Bedroom3}
+                    />
+                    </div>
+                    <div>
+                    <Image src={Livingroom4} alt='Bedroom' 
                     className='h-[15rem] md:h-[35rem] lg:h-[44.7rem] rounded-[2.625rem]'
-                    alt='Bedroom'/>
-                </div>
+
+                    />
+                    </div>
+                    <div>
+                    <Image src={Livingroom5} alt='Bedroom' 
+                    className='h-[15rem] md:h-[35rem] lg:h-[44.7rem] rounded-[2.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Livingroom6} alt='Bedroom'
+                    className='h-[15rem] md:h-[35rem] lg:h-[44.7rem] rounded-[2.625rem]'
+                    />
+                    </div>
               
             </Carousel>
         </div>
@@ -64,4 +82,4 @@ const BedroomCarousel = (props: Props) => {
   )
 }
 
-export default BedroomCarousel
+export default LivingroomCarousel
