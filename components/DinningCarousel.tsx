@@ -32,7 +32,7 @@ const DinningCarousel = (props: Props) => {
     }
   return (<div>
         <div className='relative'>
-            <h1 className='absolute z-30 top-5 left-6 md:top-12 md:left-10 lg:top-8 lg:left-20 text-[#FFFFFF] font-Lexend font-normal md:text-[2rem] lg:text-[2rem]'>Dinning section</h1>
+            <h1 className='absolute z-30 top-5 left-6 md:top-12 md:left-10 lg:top-8 lg:left-20 CircularStd text-[#FFFFFF] font-Lexend font-normal md:text-[2rem] lg:text-[2rem]'>Dinning section</h1>
             <Carousel
             renderArrowNext={renderCustomNextArrow}
             renderArrowPrev={renderCustomPrevArrow}

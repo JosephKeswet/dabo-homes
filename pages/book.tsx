@@ -63,10 +63,10 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         <div className='flex flex-col gap-9'>
             <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[56.875rem] h-[21.2rem] md:h-[30rem] lg:h-[70rem] bg-[#000000] rounded-[0.625rem]'>
               <div className='flex flex-col'>
-                <h1 className='text-center text-[#DFAA5B] text-sm md:text-[3rem] lg:text-[4.5rem] mb-[1.875rem] md:mb-12 lg:mb- font-Lexend font-bold'>Your Reservation</h1>
+                <h1 className='text-center text-[#DFAA5B] text-sm md:text-[3rem] lg:text-[4.5rem] mb-[1.875rem] md:mb-12 lg:mb- CircularStd font-bold'>Your Reservation</h1>
                 <form className='flex flex-col gap-[0.875rem] md:gap-[1rem] lg:gap-[3.875rem]'>
                 <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-                  <h1 className='text-[0.625rem] md:text-sm lg:text-4xl text-[#000000] font-Lexend font-medium leading-3'>Check-In</h1>
+                  <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd  font-medium leading-3'>Check-In</h1>
                   <div className="relative">
                     <DatePicker
                       selected={selectedDate}
@@ -88,7 +88,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                   </div>
                 </div>
                 <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-                  <h1 className='text-[0.625rem] md:text-sm lg:text-4xl text-[#000000] font-Lexend font-medium leading-3'>Check-Out</h1>
+                  <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Check-Out</h1>
                   <div className="relative">
                     <DatePicker
                       selected={selectedDate2}
@@ -136,10 +136,10 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     <input type="date" className='' ref={hiddenCheckInInput} />
                   </div> */}
                   <div className='flex items-center justify-between px-3 md:px-6 lg:px-8 w-[15.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] bg-white rounded-[0.313rem]'>
-                    <h1 className='text-[0.625rem] md:text-base lg:text-4xl text-[#000000] font-Lexend font-medium leading-3'>Guests</h1>
+                    <h1 className='text-[0.625rem] md:text-base lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
                     <FontAwesomeIcon icon={faChevronDown} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-[#DFAA5B]'/>
                   </div>
-                  <button className='flex justify-center items-center w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[48.2rem] h-9 lg:h-[7.255rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[2.625rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
+                  <button className='flex justify-center items-center CircularStd w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[48.2rem] h-9 lg:h-[7.255rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[2.625rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
                       Book Apartment
                   </button>
                 </form>
@@ -172,7 +172,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                 </Carousel>
           </div>
           <div className=' flex justify-center items-center mx-4 lg:mx-24 mt-[11rem] md:mt-[30rem] lg:mt-[55rem]'>
-            <p className='text-center text-white text-[0.675rem] md:text-2xl lg:text-2xl   font-Lexend font-medium  '>Our Bedrooms are fully equipped with fully  functional Air conditioners, A king sized bed 
+            <p className='text-center text-white text-[0.675rem] CircularStd md:text-2xl lg:text-2xl   font-Lexend font-medium  '>Our Bedrooms are fully equipped with fully  functional Air conditioners, A king sized bed 
 with 7 pillows and various duvets, a TV console
 and an Ensuite bathroom.</p>
           </div>

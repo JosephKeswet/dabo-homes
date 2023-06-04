@@ -10,3 +10,11 @@ select {
     text-indent: 1px;
     text-overflow: '';
   }
+
+@font-face {
+  font-family: Circular Std;
+  src: url('../assets/fonts/CircularStd-Medium.ttf');
+}
+.CircularStd {
+  font-family: Circular Std;
+}

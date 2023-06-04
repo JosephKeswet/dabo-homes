@@ -8,7 +8,7 @@ const DropDown = (props: Props) => {
   return (
     <div>
         <div className='flex justify-center items-center cursor-pointer  gap-2 w-[6.6rem] md:w-[6.6rem]  lg:w-48 h-[1.6rem] md:h-[1.6rem] lg:h-[3.755rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-            <h1 className='text-xs text-[#00000080] opacity-50 md:text-xs lg:text-xl'>Select a City</h1>
+            <h1 className='text-xs text-[#00000080] CircularStd opacity-50 md:text-xs lg:text-xl'>Select a City</h1>
             <div>
               <Image
               src={ArrowDown}

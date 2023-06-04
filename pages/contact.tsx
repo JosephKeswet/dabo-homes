@@ -18,8 +18,8 @@ const contact = (props: Props) => {
     <div>
             <div className="min-w-screen bg-cover  h-full bg-[url('../assets/Background.svg')]">
                 <div className=' lg:h-auto md:pt-20 '>
-                    <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>Contact Us</h1>
-                    <h2 className='text-base md:text-[2.5rem] lg:text-[2.825rem] text-center text-[#DFAA5B] font-Lexend font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>For Bookings & Reservations</h2>
+                    <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>Contact Us</h1>
+                    <h2 className='text-base md:text-[2.5rem] lg:text-[2.825rem] text-center text-[#DFAA5B] CircularStd font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>For Bookings & Reservations</h2>
                     <div className='flex justify-center pt-2 lg:pt-[7rem] lg:pb-[10.875rem]'>
                         <div className='flex justify-between px-5 lg:px-[5.3rem] items-center w-[22rem] h-[4.7rem] md:w-[47rem] md:h-[10rem] lg:w-[75.525rem] lg:h-[19.875rem] bg-white shadow-xl rounded-[0.625rem]'>
                             <div className='w-auto'>
@@ -32,8 +32,8 @@ const contact = (props: Props) => {
                                     alt=''/>
                                 </div>
                                 <div className='mt-2'>
-                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-bold lg:leading-8'>Address</h1>
-                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-medium lg:leading-8'>Lagos, Nigeria</h2>
+                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-bold lg:leading-8'>Address</h1>
+                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-medium lg:leading-8'>Lagos, Nigeria</h2>
                                 </div>
                             </div>
                             <div className='w-auto'>
@@ -46,8 +46,8 @@ const contact = (props: Props) => {
                                     alt=''/>
                                 </div>
                                 <div className='mt-2'>
-                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-bold lg:leading-8'>Phone</h1>
-                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-medium lg:leading-8'> 09129299090, 09128288080</h2>
+                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-bold lg:leading-8'>Phone</h1>
+                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-medium lg:leading-8'> 09129299090, 09128288080</h2>
                                 </div>
                             </div>
                             <div className='w-auto'>
@@ -60,21 +60,21 @@ const contact = (props: Props) => {
                                     alt=''/>
                                 </div>
                                 <div className='mt-2'>
-                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-bold lg:leading-8'>Email</h1>
-                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] font-Lexend font-medium lg:leading-8'>idabo.lagos@idabohomes.com</h2>
+                                    <h1 className='text-[0.45rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-bold lg:leading-8'>Email</h1>
+                                    <h2 className='text-[0.475rem] md:text-lg lg:text-2xl text-center text-[#000000] CircularStd font-medium lg:leading-8'>idabo.lagos@idabohomes.com</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className='pb-14 lg:pb-56 pt-8 lg:pt-[3rem]'>
-                    <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>
+                    <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] CircularStd font-semibold'>Let Us welcome you Home!</h1>
                     <div className='flex justify-center mt-4 md:mt-8'>
-                    <button className='w-[8.5rem] h-6 md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
+                    <button className='w-[8.5rem] h-6 md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl CircularStd font-semibold bg-[#DFAA5B]'>
                         Book a stay Now
                     </button>
                     </div>
-                    <h1 className='mt-6 lg:pb-[3.75rem] md:mt-[5rem] lg:mt-[8rem] text-base md:text-[2.5rem] text-center text-[#DFAA5B] font-Lexend font-bold leading-10 '>Our Apartment</h1>
+                    <h1 className='mt-6 lg:pb-[3.75rem] md:mt-[5rem] lg:mt-[8rem] text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>Our Apartment</h1>
                     <div className='flex flex-col gap-16 lg:gap-36 mx-4 pb-8 lg:pb-48 lg:mx-44'>
                         <BedroomCarousel/>
                         <DinningCarousel/>
