@@ -32,7 +32,7 @@ const Book = (props: Props) => {
     emailjs.sendForm(NEXT_PUBLIC_SERVICE_ID, NEXT_PUBLIC_TEMPLATE_ID, form.current,NEXT_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
-          toast.success('Email sent successfully!')
+          toast.success('Email sent successfully! We will get back to you soon.')
       }, (error) => {
           toast.error('We had a problem sending email')
           console.log(error.text);
@@ -216,6 +216,11 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         </div>
 
         <div className='relative top-20 w-[18.875rem] md:w-[45rem] lg:w-[80.275rem] h-[15rem] md:h-[40rem] lg:h-[64.375rem] bg-[#DFAA5BED] rounded-[0.625rem] md:rounded-[4.125rem] lg:rounded-[4.125rem]'>
+                    <div className='absolute z-50 CircularStd flex justify-center items-center  bg-[#00000078] rounded-[0.625rem] lg:rounded-[1.25rem] left-3 md:left-10 md:top-4 lg:left-16 top-0 lg:top-8 opacity-70 w-[6.4rem] h-[2.325rem] md:w-[8rem] md:h-[4rem] lg:w-[27.325rem] lg:h-[8.2rem] '>
+                      <div className='flex justify-center items-center text-sm md:text-lg lg:text-[3.5rem] text-white'>
+                        <h1>N300,000/day</h1>
+                      </div>
+                    </div>
           <div className='absolute bottom-12 md:bottom-[7rem] lg:bottom-48'>
                 <Carousel 
                 renderArrowNext={renderCustomNextArrow}
