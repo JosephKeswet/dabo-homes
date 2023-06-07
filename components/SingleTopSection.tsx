@@ -27,7 +27,7 @@ const SingleTopSection = (props: Props) => {
            <div className='absolute top-[10%] lg:top-[20%] flex justify-center items-center w-[14.94rem] md:w-[30rem] lg:w-[54.65rem] h-6 md:h-[4rem] lg:h-[6.5rem] bg-[#111111] rounded-[0.313rem] md:rounded-[0.625rem]'>
             <ul className='flex justify-center items-center gap-8 md:gap-12 lg:gap-20'>
                 {routes.map((item,index) => (
-                <Link href={item.route}>
+                <Link key={index} href={item.route}>
                   <li key={index} className='text-[#DFAA5B] text-[0.4375rem] md:text-[1rem] lg:text-[2.5rem]'>{item.title}</li>
                 </Link>
                 ))}

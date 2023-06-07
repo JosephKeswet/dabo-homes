@@ -164,8 +164,8 @@ const DropDown = (props: Props) => {
             </div>
         </div>
         {show && <div className='absolute flex flex-col gap-2 w-[6.6rem] md:w-[6.6rem]  lg:w-48 h-[9rem] z-50 rounded-[0.313rem] md:rounded-[0.625rem] bg-white shadow-2xl overflow-y-scroll scrollbar-hide'>
-            {nigeriaCities.map((city:any) => (
-              <div className='cursor-pointer' onClick={() => {
+            {nigeriaCities.map((city:any,index:any) => (
+              <div key={index} className='cursor-pointer' onClick={() => {
                 setSelectedCity(city?.name)
                 setShow(!show)
                 }}>
