@@ -35,7 +35,7 @@ const TermsConditions = (props: Props) => {
                     <div className='flex justify-center mt-10 lg:mt-40'>
                         <div>
                             <ul>
-                            {rules.map((item) => (<li className='w-[15rem] md:w-[35rem] lg:w-[45rem] list-decimal text-[#000000] mb-4 CircularStd font-medium text-base'>{item}</li>))}
+                            {rules.map((item) => (<li key={item} className='w-[15rem] md:w-[35rem] lg:w-[45rem] list-decimal text-[#000000] mb-4 CircularStd font-medium text-base'>{item}</li>))}
                             </ul>
                         </div>
                     </div>

@@ -86,7 +86,7 @@ export default function Home() {
                 <DropDown/>
                 </div>
                 <Link href='/book' className='lg:hidden cursor-pointer flex  justify-center items-center gap-2 w-[6.7rem] mt-5 h-[1.6rem] rounded-[0.313rem] bg-[#DFAA5B]'>
-                  <h1 className='text-xs CircularStd text-white md:text-xs lg:text-xl'>Check Availability</h1>
+                  <h1 className='text-[0.6rem] CircularStd text-white md:text-xs lg:text-xl'>Check Availability</h1>
                 </Link>
             </div>
             <div className='lg:hidden cursor-pointer flex flex-col'>

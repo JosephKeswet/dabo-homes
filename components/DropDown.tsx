@@ -151,7 +151,7 @@ const DropDown = (props: Props) => {
     <div className='relative'>
         <div 
         onClick={() => setShow(!show)}
-        className='flex justify-center items-center cursor-pointer  gap-2 w-[6.6rem] md:w-[6.6rem]  lg:w-48 h-[1.6rem] md:h-[1.6rem] lg:h-[3.755rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+        className='flex justify-center items-center cursor-pointer px-2  gap-2 w-[6.6rem] md:w-[6.6rem]  lg:w-48 h-[1.6rem] md:h-[1.6rem] lg:h-[3.755rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
             <h1 className='w-[8rem] text-xs text-[#00000080] CircularStd opacity-50 md:text-xs lg:text-xl'>{selectedCity != '' ? selectedCity : "Select a City"}</h1>
             <div>
               <Image

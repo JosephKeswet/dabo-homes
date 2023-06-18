@@ -20,7 +20,7 @@ const Layout = ({children}:any) => {
 
   return (
     <div>
-        {(bedroomRoute || livingroomRoute || kitchenRoute || dinningRoute) && <SingleTopSection/>}
+        {(bedroomRoute || livingroomRoute || kitchenRoute || dinningRoute ) && <SingleTopSection/>}
         <div>{children}</div>
         <div className=''>
          <Footer/>
