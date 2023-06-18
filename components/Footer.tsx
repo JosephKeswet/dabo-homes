@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
     <div>
         <div className='flex justify-center items-center w-full h-[4rem] md:h-[10rem] lg:h-[15rem] bg-[#111111]'>
             <ul className='flex justify-center items-center gap-4 md:gap-20'>
-                {pages?.map((page,index) => (<Link href={page?.route} key={index} className='text-[#DFAA5B] CircularStd text-[0.4375rem] md:text-[1.5rem] lg:text-[2.5rem]'>{page?.route}</Link>))}
+                {pages?.map((page,index) => (<Link href={page?.route} key={index} className='text-[#DFAA5B] CircularStd text-[0.4375rem] md:text-[1.5rem] lg:text-[2.5rem]'>{page?.title}</Link>))}
             </ul>
         </div>
     </div>
