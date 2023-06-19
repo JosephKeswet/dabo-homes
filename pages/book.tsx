@@ -92,19 +92,19 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
   return (
     <div className='relative'>
       <ToastContainer/>
-      <div className=''>
-        <Image src={Bedroom} alt="Bedroom" />
-        <Image src={Livingroom} alt="Livingroom" />
-        <Image src={Dinning} alt="Dinning" />
+      <div className='w-screen'>
+        <Image src={Bedroom} alt="Bedroom" className='w-screen' />
+        <Image src={Livingroom} alt="Livingroom" className='w-screen' />
+        <Image src={Dinning} alt="Dinning" className='w-screen' />
       </div>
-      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-52  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[30rem] lg:bottom-[35rem] justify-center items-center'>
+      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-52  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[30rem] lg:bottom-[59rem] justify-center items-center'>
         <div className='flex flex-col gap-9'>
-            <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[56.875rem] h-[21.2rem] md:h-[38rem] lg:h-[70rem] bg-[#000000] rounded-[0.625rem]'>
+            <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[56.875rem] h-[21.2rem] md:h-[38rem] lg:h-[58rem] bg-[#000000] rounded-[0.625rem]'>
               <div className='flex flex-col'>
                 <h1 className='text-center text-[#DFAA5B] text-sm md:text-[3rem] lg:text-[4.5rem] mb-[1.875rem] md:mb-12 lg:mb- CircularStd font-bold'>Your Reservation</h1>
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-[0.875rem] md:gap-[1rem] lg:gap-[3.875rem]'>
-                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-                  <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd  font-medium leading-3'>Check-In</h1>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-[0.875rem] md:gap-[1rem] lg:gap-[2.875rem]'>
+                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                  <h1 className='text-[0.625rem] md:text-sm lg:text-xl text-[#000000] CircularStd  font-medium leading-3'>Check-In</h1>
                   <div className="relative">
                     <DatePicker
                       name='check-in'
@@ -115,23 +115,23 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                       onFocus={() => setIsDatePickerOpen(true)}
                       open={isDatePickerOpen}
                       dateFormat="yyyy-MM-dd"
-                      className='flex justify-center items-center ml-2 md:ml-36  lg:ml-40 outline-none pl-2 pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
+                      className='flex justify-center items-center ml-2 md:ml-36  lg:ml-40 outline-none pl-2 pr-3 w-[11rem] md:w-[14rem] lg:w-[22.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
                     />
                     <Image
                       src={CalendarIcon}
                       alt='Calendar Icon'
                       width={18}
                       height={18}
-                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-2 w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[3.625rem] md:h-[2rem] lg:h-[3.575rem]'
+                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-2 w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[2.625rem] md:h-[2rem] lg:h-[3.575rem]'
                       onClick={() => setIsDatePickerOpen(!isDatePickerOpen)}
                     />
                   </div>
                 </div>
-                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-                  <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Check-Out</h1>
+                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                  <h1 className='text-[0.625rem] md:text-sm lg:text-xl text-[#000000] CircularStd font-medium leading-3'>Check-Out</h1>
                   <div className="relative">
                     <DatePicker
-                      name='check-in'
+                      name='check-out'
                       required
                       selected={selectedDate2}
                       onChange={handleDateChange2}
@@ -139,14 +139,14 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                       onFocus={() => setIsDatePickerOpen2(true)}
                       open={isDatePickerOpen2}
                       dateFormat="yyyy-MM-dd"
-                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-36 outline-none pl-2 lg:pl-0 pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
+                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-14 outline-none pl-2 lg:pl-0 pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
                     />
                     <Image
                       src={CalendarIcon}
                       alt='Calendar Icon'
                       width={18}
                       height={18}
-                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-2 w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[3.625rem] md:h-[2rem] lg:h-[3.575rem]'
+                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-2 lg:left-[27.5rem] w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[3.625rem] md:h-[2rem] lg:h-[2.575rem]'
                       onClick={() => setIsDatePickerOpen2(!isDatePickerOpen2)}
                     />
                   </div>
@@ -177,11 +177,11 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     />
                     <input type="date" className='' ref={hiddenCheckInInput} />
                   </div> */}
-                  <div className='flex cursor-pointer items-center justify-between px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                  <div className='flex cursor-pointer items-center justify-between px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
                       <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Email</h1>
-                      <input type='email' required name='email' className='flex cursor-pointer items-center outline-none  md:text-3xl  px-5 gap-2 w-[12rem] md:w-[35rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'/>
+                      <input type='email' required name='email' className='flex cursor-pointer items-center outline-none  md:text-3xl  px-5 gap-2 w-[12rem] md:w-[35rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'/>
                   </div>
-                  <div className='flex items-center justify-between px-3 md:px-6 lg:px-8 w-[15.25rem] md:w-[30rem] lg:w-[48.2rem] h-9 md:h-[4rem] lg:h-[7.255rem] bg-white rounded-[0.313rem]'>
+                  <div className='flex items-center justify-between px-3 md:px-6 lg:px-8 w-[15.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] bg-white rounded-[0.313rem]'>
                     <h1 className='text-[0.625rem] ml-2 md:text-base lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
                     <div className='relative'>
                       <select
@@ -199,7 +199,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                         ))}
                       </select>
                       <div className='absolute right-0 top-0 h-full w-8 pointer-events-none flex items-center justify-center'>
-                        <FontAwesomeIcon icon={faChevronDown} className='w-4 h-4 md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-[#DFAA5B]'/>
+                        <FontAwesomeIcon icon={faChevronDown} className='w-4 h-4 md:w-[2rem] md:h-[2rem] lg:w-[2.625rem] lg:h-[2.575rem] text-[#DFAA5B]'/>
                       </div>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     <h1 className='text-[0.625rem] md:text-base lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
                     <FontAwesomeIcon icon={faChevronDown} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-[#DFAA5B]'/>
                   </div> */}
-                  <button typeof='submit' className='flex justify-center items-center CircularStd w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[48.2rem] h-9 lg:h-[7.255rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[2.625rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
+                  <button typeof='submit' className='flex justify-center items-center CircularStd w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[42.2rem] h-9 lg:h-[5.255rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[2.625rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
                       Book Apartment
                   </button>
                 </form>

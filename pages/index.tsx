@@ -10,6 +10,7 @@ import Link from 'next/link'
 import PoolIcon from '../assets/icons/Pool.svg'
 import WifiIcon from '../assets/icons/Wifi.svg'
 import GymIcon from '../assets/icons/Gym.svg'
+import Navbar from '@/components/Navbar'
 
 
 
@@ -75,12 +76,15 @@ export default function Home() {
       md:h-[42rem] md:bg-contain 
       lg:h-[65rem] bg-no-repeat bg-contain lg:bg-cover
       ">
-        <div className='flex justify-center'>
+        <div>
+          <Navbar/>
+        </div>
+        {/* <div className='flex justify-center'>
           <div className='absolute top-8 md:top-20 lg:top-44 z-30  flex items-center justify-center flex-wrap gap-3'>
             <div className='hidden lg:flex pt-5 md:pt-0'>
             <DropDown/>
             </div>
-            {/* Small screens */}
+
             <div className='lg:hidden w-[17rem] flex items-center gap-5 justify-center'>
                 <div className='pt-5 md:pt-5'>
                 <DropDown/>
@@ -98,7 +102,6 @@ export default function Home() {
               <input type="date" name="" id="" className='px-2 rounded-[0.313rem]'/>
             </div>
 
-            {/* Big Screens */}
             <div className='hidden lg:flex cursor-pointer items-center px-5 gap-2   md:rounded-[0.625rem] bg-[#FFFFFF]'>
               <h1 className='text-[0.313rem] CircularStd text-[#00000080] opacity-50 md:text-xs lg:text-lg'>Check In</h1>
               <input type="date" name="" id="" className='flex justify-center items-center outline-none gap-2 text-[#00000080] opacity-50 w-[3.125rem] md:w-24  lg:w-36 h-4 md:h-8 lg:h-[3.755rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'/>
@@ -111,7 +114,7 @@ export default function Home() {
               <h1 className='text-[0.313rem] text-white md:text-xs lg:text-xl'>Check Availability</h1>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className='flex justify-center'>
           <div className='absolute top-36 max-[280px]:top-[14rem] md:top-48 lg:top-96 z-30  flex flex-col items-center gap-3 '>
               <h1 className='shadow-lg text-xl text-center md:text-5xl text-white lg:text-[4.325rem] font-Lexend font-normal max-[280px]:text-sm'>WELCOME TO IDABO HOMES</h1>

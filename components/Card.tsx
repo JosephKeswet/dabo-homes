@@ -17,8 +17,8 @@ const Card = ({image,mainText,subText,route}: Props) => {
   )
   return (
     <div>
-        <div className='w-[9.5rem] h-[12.07rem] md:w-[30rem] md:h-[37rem] lg:w-[39rem] lg:h-[42.85rem] rounded-[0.625rem] md:rounded-[2.625rem] lg:rounded-[2.625rem] bg-[#DFAA5BB0]'>
-          <div className='relative w-[9.5rem] h-[10.07rem] md:w-[30rem] md:h-[25rem] lg:w-[39rem] lg:h-[28.325rem] '>
+        <div className='w-[9.5rem] h-[10.5rem] md:w-[30rem] md:h-[37rem] lg:w-[39rem] lg:h-[42.85rem] rounded-[0.625rem] md:rounded-[2.625rem] lg:rounded-[2.625rem] bg-[#DFAA5BB0]'>
+          <div className='relative w-[9.5rem] h-[8.07rem] md:w-[30rem] md:h-[25rem] lg:w-[39rem] lg:h-[28.325rem] '>
           <h1 className='absolute top-0 md:top-8 left-1 md:left-6 lg:left-6 CircularStd text-white text-base md:text-[2rem] lg:text-[2rem] font-Lexend font-medium leading-10'>{mainText}</h1>
             <div className='bg-gradient-to-tl from-[#000000C2] to-[#FFFFFF40] rounded-[0.625rem] md:rounded-[2.625rem] lg:rounded-[2.625rem]'>
               <Image 
@@ -28,12 +28,12 @@ const Card = ({image,mainText,subText,route}: Props) => {
               height={453}
               alt="Card Image" />
             </div>
-            <Link href={route} className='absolute bottom-3 md:bottom-14 lg:bottom-3 left-1 md:left-6 lg:left-6 '>
+            <Link href={route} className='absolute bottom-4 md:bottom-14 lg:bottom-3 left-1 md:left-6 lg:left-6 '>
               <SeemoreButton/>
             </Link>
           </div>
           <div className=' flex justify-center items-center mt-0 lg:mt-10'>
-            <p className='text-center CircularStd text-white text-[0.375rem] md:text-2xl lg:text-2xl  w-[8rem] md:w-[26rem] lg:w-[31.5rem] CircularStd font-medium leading-[0.375rem] '>{subText}</p>
+            <p className='text-left CircularStd text-white text-[0.375rem] md:text-2xl lg:text-2xl  w-[8rem] md:w-[26rem] lg:w-[35.5rem] CircularStd font-medium leading-[0.375rem] '>{subText}</p>
           </div>
         </div>
     </div>
