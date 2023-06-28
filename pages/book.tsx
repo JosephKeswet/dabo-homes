@@ -54,7 +54,7 @@ const Book = (props: Props) => {
   };
 
   const [selectedValue, setSelectedValue] = useState<any>(null);
-  const dropdownOptions = [1, 2, 3, 4];
+  const dropdownOptions = [1, 2, 3, 4,5,6];
 
   const handleSelect = (value:any) => {
     setSelectedValue(value);
