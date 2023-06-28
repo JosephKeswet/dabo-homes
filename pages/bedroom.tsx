@@ -43,6 +43,7 @@ const Bedroom = (props: Props) => {
               <h1 className='shadow-lg text-xl text-center md:text-5xl text-white lg:text-[4.325rem] font-Lexend font-normal max-[280px]:text-sm'>IDABO HOMES</h1>
               <p className='text-center text-white text-xs md:text-2xl lg:text-[1.825rem] lg:leading-10 w-[21.5rem] max-[280px]:w-[16rem] md:w-[40rem] lg:w-[50rem]'>Luxurious waterfront living space specially curated to fill you with joy for your short, medium, and extended stay.</p>
           </div>
+          
         </div>
         <div className='mt-7 lg:mt-16'>
             <h1 className='text-center md:text-[2rem] lg:text-[2.5rem] text-[#DFAA5B] lg:font-extrabold mb-3 lg:mb-16'>Our Bedroom</h1>
@@ -87,14 +88,14 @@ const Bedroom = (props: Props) => {
             <div className='mx-11 lg:mx-[10.5rem] mb-[5rem] lg:mb-[6.44rem]'>
                 <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>Our Suite has a comfortable king size bed, dinning area, a sitting area with separate desk and and chairs, bathroom with…</p>
             </div>
-            <div className='mb-14  lg:mb-56'>
+            {/* <div className='mb-14  lg:mb-56'>
                 <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>
                 <div className='flex justify-center mt-4 md:mt-8'>
                 <button className='w-[8.5rem] h-6 md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
                     Book a stay Now
                 </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

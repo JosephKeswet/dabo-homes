@@ -14,6 +14,12 @@ import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from '@/components/Navbar'
+import Bedroom2 from '../assets/Bedroom2.jpg';
+import Bedroom3 from '../assets/Bedroom3.jpg';
+import Bedroom4 from '../assets/Bedroom4.jpg';
+import Bedroom5 from '../assets/Bedroom5.jpg';
+import Bedroom6 from '../assets/Bedroom6.jpg';
 
 
 type Props = {}
@@ -97,7 +103,10 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         <Image src={Livingroom} alt="Livingroom" className='w-screen' />
         <Image src={Dinning} alt="Dinning" className='w-screen' />
       </div>
-      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-52  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[30rem] lg:bottom-[59rem] justify-center items-center'>
+      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-32  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[15rem] lg:bottom-[39rem] justify-center items-center'>
+          <div className='absolute bottom-[26rem] md:bottom-[72rem] lg:flex lg:mb-[60rem]'>
+            <Navbar/>
+          </div>
         <div className='flex flex-col gap-9'>
             <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[56.875rem] h-[21.2rem] md:h-[38rem] lg:h-[58rem] bg-[#000000] rounded-[0.625rem]'>
               <div className='flex flex-col'>
@@ -139,14 +148,14 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                       onFocus={() => setIsDatePickerOpen2(true)}
                       open={isDatePickerOpen2}
                       dateFormat="yyyy-MM-dd"
-                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-14 outline-none pl-2 lg:pl-0 pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
+                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-[5rem] outline-none pl-2 lg:pl-[4.5rem] pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
                     />
                     <Image
                       src={CalendarIcon}
                       alt='Calendar Icon'
                       width={18}
                       height={18}
-                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-2 lg:left-[27.5rem] w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[3.625rem] md:h-[2rem] lg:h-[2.575rem]'
+                      className='absolute top-1/2 transform -translate-y-1/2 right-3 lg:right-0 lg:left-[27.5rem] w-[1.125rem] h-[1.125rem] md:w-[2rem] lg:w-[3.625rem] md:h-[2rem] lg:h-[2.575rem]'
                       onClick={() => setIsDatePickerOpen2(!isDatePickerOpen2)}
                     />
                   </div>
@@ -238,10 +247,39 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     />
                     </div>
                     <div>
-                    <Image src={LivingroomLarge} alt='Bedroom'
+                    <Image src={LivingroomLarge} alt='Bedroom'                     
                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
                     />
                     </div>
+                    {/* <div>
+                    <Image src={Bedroom2} alt='Bedroom'                     
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+
+                    />
+                    </div>
+                    <div>
+                    <Image src={Bedroom3} alt='Bedroom'
+                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+
+                    />
+                    </div>
+                    <div>
+                    <Image src={Bedroom4} alt='Bedroom'
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    
+                    />
+                    </div>
+                    <div>
+                    <Image src={Bedroom5} alt='Bedroom' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                  
+                    />
+                    </div>
+                    <div>
+                    <Image src={Bedroom6} alt='Bedroom'
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div> */}
                 </Carousel>
           </div>
           <div className=' flex justify-center items-center mx-4 lg:mx-24 mt-[11rem] md:mt-[30rem] lg:mt-[55rem]'>

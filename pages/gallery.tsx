@@ -9,6 +9,7 @@ import Apartments from '../assets/gallery/Apartments.svg';
 import Bedroom3 from '../assets/gallery/Bedroom3.svg';
 import CourtYard from '../assets/gallery/CourtYard.svg';
 import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 const images = [
   Bedroom1,
@@ -24,7 +25,11 @@ const images = [
 
 const Gallery = () => {
   return (
-    <div className='mt-12'>
+    <div>
+      <div className='pb-[6rem] h-[0.2rem] lg:h-auto lg:pb-0'>
+        <Navbar/>
+      </div>
+    <div className='mt-4 md:mt-32 lg:mt-12 '>
         <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>Gallery</h1>
         <h2 className='text-base md:text-[4.3125rem] text-center text-[#DFAA5B] CircularStd font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>Check out pictures of our Apartment</h2>
     <div className="grid grid-cols-2 gap-4 px-4 lg:px-14 py-8 lg:mt-20">
@@ -48,7 +53,7 @@ const Gallery = () => {
         </div>
       </div>
     </div>
-
+    </div>
   );
 };
 

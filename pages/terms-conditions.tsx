@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import React from 'react'
 
@@ -29,7 +30,11 @@ const TermsConditions = (props: Props) => {
   return (
     <div>
         <div className="min-w-screen bg-cover  h-full bg-[url('../assets/Background.svg')]">
-            <div className='w-full md:pt-16 pb-[1rem] lg:pb-[10rem]'>
+           <div className='absolute left-0 right-0 lg:inline-block'>
+                <Navbar/>
+              </div>
+            <div className='w-full md:pt-[10rem] pb-[1rem] pt-[5rem] lg:pt-[20rem] lg:pb-[10rem]'>
+             
                     <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>Welcome to Idabo Homes</h1>
                     <h2 className='text-base md:text-[4.3125rem] text-center text-[#DFAA5B] CircularStd font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>terms and conditions</h2>
                     <div className='flex justify-center mt-10 lg:mt-40'>

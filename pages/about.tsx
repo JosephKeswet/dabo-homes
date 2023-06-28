@@ -16,6 +16,7 @@ import DinningCarousel from '@/components/DinningCarousel'
 import LivingroomCarousel from '@/components/LivingroomCarousel'
 import KitchenCarousel from '@/components/KitchenCarousel'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
 
 
 type Props = {}
@@ -48,8 +49,11 @@ const About = (props: Props) => {
         <Image src={Livingroom} alt="Livingroom" />
         <Image src={Dinning} alt="Dinning" />
       </div> */}
+        <div className='absolute left-0 right-0 lg:inline-block'>
+            <Navbar/>
+        </div>
       <div className=''>
-            <div className='w-full md:pt-16 pb-[1rem] lg:pb-[10rem]'>
+            <div className='w-full pt-[5rem] md:pt-[10rem] pb-[1rem] lg:pt-[20rem] lg:pb-[5rem]'>
                 <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>About Us</h1>
                 <h2 className='text-base md:text-[4.3125rem] text-center text-[#DFAA5B] CircularStd font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>Welcome to idabo homes</h2>
                 <div className='w-screen flex justify-center md:mt-4 lg:mt-7'>

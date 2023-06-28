@@ -8,6 +8,7 @@ import DinningCarousel from '@/components/DinningCarousel'
 import LivingroomCarousel from '@/components/LivingroomCarousel'
 import KitchenCarousel from '@/components/KitchenCarousel'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 
 
@@ -17,7 +18,10 @@ const contact = (props: Props) => {
   return (
     <div>
             <div className="min-w-screen bg-cover  h-full bg-[url('../assets/Background.svg')]">
-                <div className=' lg:h-auto md:pt-20 '>
+                <div className='absolute left-0 right-0 '>
+                    <Navbar/>
+                </div>
+                <div className='pt-28  lg:h-auto md:pt-44 lg:pt-[20rem]'>
                     <h1 className='text-base md:text-[2.5rem] text-center text-[#DFAA5B] CircularStd font-bold leading-10 '>Contact Us</h1>
                     <h2 className='text-base md:text-[2.5rem] lg:text-[2.825rem] text-center text-[#DFAA5B] CircularStd font-semibold capitalize pt-1 md:leading-[3.6rem] md:pt-8 lg:mt-8'>For Bookings & Reservations</h2>
                     <div className='flex justify-center pt-2 lg:pt-[7rem] lg:pb-[10.875rem]'>
