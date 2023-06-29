@@ -20,32 +20,30 @@ import Navbar from '@/components/Navbar'
 
 export default function Home() {
   const cardInfo = [
-    {mainText: 'Bedroom',subText: `Our Bedrooms are fully equipped with fully 
+    {mainText: 'Bedroom',subText: `Our ensuite Bedrooms are fully equipped with fully 
     functional Air conditioners, A king sized bed 
-    with 7 pillows and various duvets, a TV console
-    and an Ensuite bathroom.`,
+    with  TVs, wardrobes, and dedicated workspaces.
+    `,
     image: Bedroom,
     route:'/bedroom'
   },
     {mainText:"Living Room",subText: `Possessing a spacious environ, our living rooms
-    are properly equipped with a 72inch TV set, a
-    proper set of Sofas, a dinning section, bean bags
-    and adorned with the best of artworks to your 
-    taste. `,
+    are adequately equipped with double air conditioners, a 65inch TV set, sofas, mini library, and a lounge facing 
+    the waterview and adorned with the best of artworks.`,
     image: Livingroom,
     route:'/livingroom'
   },
     {mainText: "Dinning Section",subText:`Family and friends are not left out in our apartment
     plans, sit and eat together away from home but just 
-    like home with our 7 seat capacitated dinning set
+    like home with our six-seat capacitated dining set.    
     `,
     image: Dinning,
     route:'/dinning'
   },
-    {mainText: "Kitchen",subText:`We know how it can be being away from home but
-    our well-equipped, Ensuite Kitchen will bring home
-    to you, it is fully stacked with pots, plates, an electric
-    cooker, dishwasher and many more`,
+    {mainText: "Kitchen",subText:`We know how being away from home can be, but our
+    well-equipped kitchen will bring home to you: it is 
+    fully stacked with kitchenware, an air conditioner
+    a two-seater dining table and a water heater.`,
     image: Kitchen,
     route:'/kitchen'
   }
@@ -120,14 +118,24 @@ export default function Home() {
               <h1 className='shadow-lg text-xl text-center md:text-5xl text-white lg:text-[4.325rem] font-Lexend font-normal max-[280px]:text-sm'>WELCOME TO IDABO HOMES</h1>
               <p className='text-center CircularStd text-white text-xs md:text-2xl lg:text-[1.825rem] lg:leading-10 w-[21.5rem] max-[280px]:w-[16rem] md:w-[40rem] lg:w-[50rem]'>Luxurious waterfront living space specially curated to fill you with joy for your short, medium, and extended stay.</p>
           </div>
+          <div className='mb-14 lg:mb-56 mt-8 lg:mt-[20rem]'>
+        <h1 className='text-center text-[#E0AC5F] text-[1rem] md:text-[2rem] lg:text-[2.5rem] CircularStd font-black'>Let Us welcome you Home!</h1>
+        <div className='flex justify-center mt-4 md:mt-8'>
+          <Link href='/book'>
+            <button className='w-[8.5rem] h-6 CircularStd md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
+              Book a stay Now
+            </button>
+          </Link>
+        </div>
+      </div>
         </div>
         <div className='flex justify-center'>
-          <div className='absolute top-[14.5rem] max-[280px]:top-[22rem] max-[360px]:top-[13rem] md:top-[30rem] lg:top-[54rem] z-30  flex flex-col items-center gap-3 '>
+          <div className='absolute top-[14.5rem] max-[280px]:top-[22rem] max-[360px]:top-[13rem] md:top-[30rem] lg:top-[56rem] z-30  flex flex-col items-center gap-3 '>
               <h1 className='shadow-lg md:text-3xl lg:text-[2rem] text-center  text-[#DFAA5B]  CircularStd font-bold max-[280px]:text-sm'>Facilities</h1>
           </div>
         </div>
         <div className='flex justify-center'>
-          <div className='shadow-xl flex flex-row items-center justify-center gap-4 md:gap-10 lg:gap-24 absolute top-[17rem] max-[280px]:top-[24rem] max-[360px]:top-[15rem] max-[375px]:top-[16rem] md:top-[34rem] lg:top-[58.2rem] z-30  w-44 md:w-[38rem] lg:w-[48rem] h-[2.125rem]  md:h-[6rem] lg:h-[6.5rem] rounded-[0.625rem] bg-[#000000]'>
+          <div className='shadow-xl flex flex-row items-center justify-center gap-4 md:gap-10 lg:gap-24 absolute top-[17rem] max-[280px]:top-[24rem] max-[360px]:top-[15rem] max-[375px]:top-[16rem] md:top-[34rem] lg:top-[61rem] z-30  w-44 md:w-[38rem] lg:w-[48rem] h-[2.125rem]  md:h-[6rem] lg:h-[6.5rem] rounded-[0.625rem] bg-[#000000]'>
           <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
             <div className='w-2 h-3 md:w-auto lg:w-auto'>
                   <Image

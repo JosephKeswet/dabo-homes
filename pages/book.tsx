@@ -103,16 +103,16 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         <Image src={Livingroom} alt="Livingroom" className='w-screen' />
         <Image src={Dinning} alt="Dinning" className='w-screen' />
       </div>
-      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-32  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[15rem] lg:bottom-[39rem] justify-center items-center'>
-          <div className='absolute bottom-[26rem] md:bottom-[72rem] lg:flex lg:mb-[60rem]'>
+      <div className='w-full flex flex-col gap-10 lg:gap-52 absolute z-40 bottom-32  max-[280px]:top-20  max-[360px]:bottom-24 max-[375px]:bottom-28  md:bottom-[15rem] lg:bottom-[100rem] justify-center items-center'>
+          <div className='absolute bottom-[26rem] md:bottom-[72rem] lg:flex lg:bottom-[80rem]'>
             <Navbar/>
           </div>
-        <div className='flex flex-col gap-9'>
-            <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[56.875rem] h-[21.2rem] md:h-[38rem] lg:h-[58rem] bg-[#000000] rounded-[0.625rem]'>
+        <div className='flex flex-col gap-9  '>
+            <div className='flex justify-center items-center w-[18.125rem] max-[280px]:w-[18rem] md:w-[40rem] lg:w-[42.875rem] h-[21.2rem] md:h-[38rem] lg:h-[40rem] bg-[#000000] rounded-[0.625rem]'>
               <div className='flex flex-col'>
-                <h1 className='text-center text-[#DFAA5B] text-sm md:text-[3rem] lg:text-[4.5rem] mb-[1.875rem] md:mb-12 lg:mb- CircularStd font-bold'>Your Reservation</h1>
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-[0.875rem] md:gap-[1rem] lg:gap-[2.875rem]'>
-                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                <h1 className='text-center text-[#DFAA5B] text-sm md:text-[3rem] lg:text-[2.275rem] mb-[1.875rem] md:mb-12 lg:mt-[1rem] CircularStd font-bold'>Your Reservation</h1>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-[0.875rem] md:gap-[1rem] lg:gap-[1.5rem] lg:ml-[0.8rem]'>
+                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[30.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
                   <h1 className='text-[0.625rem] md:text-sm lg:text-xl text-[#000000] CircularStd  font-medium leading-3'>Check-In</h1>
                   <div className="relative">
                     <DatePicker
@@ -124,7 +124,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                       onFocus={() => setIsDatePickerOpen(true)}
                       open={isDatePickerOpen}
                       dateFormat="yyyy-MM-dd"
-                      className='flex justify-center items-center ml-2 md:ml-36  lg:ml-40 outline-none pl-2 pr-3 w-[11rem] md:w-[14rem] lg:w-[22.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
+                      className='flex justify-center items-center ml-2 md:ml-36  lg:ml-40 outline-none pl-2 pr-3 w-[11rem] md:w-[14rem] lg:w-[22.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
                     />
                     <Image
                       src={CalendarIcon}
@@ -136,7 +136,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     />
                   </div>
                 </div>
-                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                <div className='flex cursor-pointer items-center px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
                   <h1 className='text-[0.625rem] md:text-sm lg:text-xl text-[#000000] CircularStd font-medium leading-3'>Check-Out</h1>
                   <div className="relative">
                     <DatePicker
@@ -148,7 +148,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                       onFocus={() => setIsDatePickerOpen2(true)}
                       open={isDatePickerOpen2}
                       dateFormat="yyyy-MM-dd"
-                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-[5rem] outline-none pl-2 lg:pl-[4.5rem] pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
+                      className='flex justify-center items-center ml-2 md:ml-[8.5rem] lg:ml-[5rem] outline-none pl-2 lg:pl-[4.5rem] pr-3 w-[11rem] md:w-[14rem] lg:w-[25.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'
                     />
                     <Image
                       src={CalendarIcon}
@@ -186,19 +186,19 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     />
                     <input type="date" className='' ref={hiddenCheckInInput} />
                   </div> */}
-                  <div className='flex cursor-pointer items-center justify-between px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
-                      <h1 className='text-[0.625rem] md:text-sm lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Email</h1>
-                      <input type='email' required name='email' className='flex cursor-pointer items-center outline-none  md:text-3xl  px-5 gap-2 w-[12rem] md:w-[35rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'/>
+                  <div className='flex cursor-pointer items-center justify-between px-5 gap-2 w-[13.25rem] md:w-[30rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] md:rounded-[0.625rem] bg-[#FFFFFF]'>
+                      <h1 className='text-[0.625rem] md:text-sm lg:text-[1.325rem] text-[#000000] CircularStd font-medium leading-3'>Email</h1>
+                      <input type='email' required name='email' className='flex cursor-pointer items-center outline-none  md:text-3xl  px-5 gap-2 w-[12rem] md:w-[35rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] rounded-[0.313rem] md:rounded-[0.625rem] bg-[#FFFFFF]'/>
                   </div>
-                  <div className='flex items-center justify-between px-3 md:px-6 lg:px-8 w-[15.25rem] md:w-[30rem] lg:w-[42.2rem] h-9 md:h-[4rem] lg:h-[5.255rem] bg-white rounded-[0.313rem]'>
-                    <h1 className='text-[0.625rem] ml-2 md:text-base lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
+                  <div className='flex items-center justify-between px-3 md:px-6 lg:px-5 w-[15.25rem] md:w-[30rem] lg:w-[38.2rem] h-9 md:h-[4rem] lg:h-[4.255rem] bg-white rounded-[0.313rem]'>
+                    <h1 className='text-[0.625rem] ml-2 md:text-base lg:text-[1.325rem] text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
                     <div className='relative'>
                       <select
                         name='guest-number'
                         required
                         value={selectedValue}
                         onChange={(e) => handleSelect(e.target.value)}
-                        className=' appearance-none w-[8.25rem] md:w-[16rem] lg:w-[25.2rem] bg-transparent border-none outline-none text-[0.625rem] md:text-base lg:text-3xl text-[#DFAA5B]'
+                        className=' appearance-none w-[8.25rem] md:w-[16rem] lg:w-[25.2rem] bg-transparent border-none outline-none text-[0.625rem] md:text-base lg:text-3xl pl-0 lg:pl-[4.5rem] text-[#DFAA5B]'
                       >
                         <option value="">Select</option>
                         {dropdownOptions.map((option) => (
@@ -216,7 +216,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     <h1 className='text-[0.625rem] md:text-base lg:text-3xl text-[#000000] CircularStd font-medium leading-3'>Guests</h1>
                     <FontAwesomeIcon icon={faChevronDown} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-[#DFAA5B]'/>
                   </div> */}
-                  <button typeof='submit' className='flex justify-center items-center CircularStd w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[42.2rem] h-9 lg:h-[5.255rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[2.625rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
+                  <button typeof='submit' className='flex justify-center items-center CircularStd w-[15.25rem] md:w-[30rem] md:h-[4rem] lg:w-[37.975rem] h-9 lg:h-[4rem] bg-[#DFAA5B] text-[#000000] text-xs md:text-2xl lg:text-[1.5rem] font-Lexend font-bold leading-4 mt-2 rounded-[0.313rem]' type='submit' onClick={() => console.log("Works")}>
                       Book Apartment
                   </button>
                 </form>
@@ -224,13 +224,13 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
             </div>
         </div>
 
-        <div className='relative top-20 w-[18.875rem] md:w-[45rem] lg:w-[80.275rem] h-[15rem] md:h-[40rem] lg:h-[64.375rem] bg-[#DFAA5BED] rounded-[0.625rem] md:rounded-[4.125rem] lg:rounded-[4.125rem]'>
-                    <div className='absolute z-50 CircularStd flex justify-center items-center  bg-[#00000078] rounded-[0.625rem] lg:rounded-[1.25rem] left-3 md:left-10 md:top-4 lg:left-16 top-0 lg:top-8 opacity-70 w-[6.4rem] h-[2.325rem] md:w-[8rem] md:h-[4rem] lg:w-[27.325rem] lg:h-[8.2rem] '>
-                      <div className='flex justify-center items-center text-sm md:text-lg lg:text-[3.5rem] text-white'>
+        <div className='relative top-20 w-[18.875rem] md:w-[45rem] lg:w-[55.2rem] h-[15rem] md:h-[40rem] lg:h-[29.375rem] bg-[#DFAA5BED] rounded-[0.625rem] md:rounded-[4.125rem] lg:rounded-[4.125rem] lg:top-[20rem]'>
+                    <div className='absolute z-50 CircularStd flex justify-center items-center  bg-[#00000078] rounded-[0.625rem] lg:rounded-[1.25rem] left-3 md:left-10 md:top-4 lg:left-10 top-0 lg:top-[-5rem] opacity-70 w-[6.4rem] h-[2.325rem] md:w-[8rem] md:h-[4rem] lg:w-[18.325rem] lg:h-[5.6rem] '>
+                      <div className='flex justify-center items-center text-sm md:text-lg lg:text-[2rem] text-white'>
                         <h1>N300,000/day</h1>
                       </div>
                     </div>
-          <div className='absolute bottom-12 md:bottom-[7rem] lg:bottom-48'>
+          <div className='absolute bottom-12 md:bottom-[7rem] lg:bottom-0 lg:top-[-17.675rem] '>
                 <Carousel 
                 renderArrowNext={renderCustomNextArrow}
                 renderArrowPrev={renderCustomPrevArrow}
@@ -282,11 +282,11 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                     </div> */}
                 </Carousel>
           </div>
-          <div className=' flex justify-center items-center mx-4 lg:mx-24 mt-[11rem] md:mt-[30rem] lg:mt-[55rem]'>
+          {/* <div className=' flex justify-center items-center mx-4 lg:mx-24 mt-[11rem] md:mt-[30rem] lg:mt-[55rem]'>
             <p className='text-center text-white text-[0.675rem] CircularStd md:text-2xl lg:text-2xl   font-Lexend font-medium  '>Our Bedrooms are fully equipped with fully  functional Air conditioners, A king sized bed 
 with 7 pillows and various duvets, a TV console
 and an Ensuite bathroom.</p>
-          </div>
+          </div> */}
         </div>
         
  
