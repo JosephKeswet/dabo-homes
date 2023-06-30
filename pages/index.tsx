@@ -11,6 +11,20 @@ import PoolIcon from '../assets/icons/Pool.svg'
 import WifiIcon from '../assets/icons/Wifi.svg'
 import GymIcon from '../assets/icons/Gym.svg'
 import Navbar from '@/components/Navbar'
+import Item1 from '../assets/new/Item1.jpg'
+import Item2 from '../assets/new/Item2.jpg';
+import Item3 from '../assets/new/Item3.jpg';
+import Item4 from '../assets/new/Item4.jpg';
+import Item5 from '../assets/new/Item5.jpg';
+import Item6 from '../assets/new/Item6.jpg';
+import Item7 from '../assets/new/Item7.jpg';
+import Item8 from '../assets/new/Item8.jpg';
+import Item9 from '../assets/new/Item9.jpg';
+import { Carousel } from 'react-responsive-carousel'
+import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -19,6 +33,29 @@ import Navbar from '@/components/Navbar'
 
 
 export default function Home() {
+
+  const renderCustomNextArrow = (onClickHandler:any, hasPrev:any, label:any) => {
+    return (
+    <div
+    onClick={onClickHandler} 
+    className=' bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+        <FontAwesomeIcon icon={faChevronRight} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
+    </div>)
+}
+
+const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
+    return (
+        <div>
+            <div 
+            onClick={onClickHandler}
+            className=' bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+                <FontAwesomeIcon icon={faChevronLeft} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
+            </div>
+        </div>
+    )
+}
+
+
   const cardInfo = [
     {mainText: 'Bedroom',subText: `Our ensuite Bedrooms are fully equipped with fully 
     functional Air conditioners, A king sized bed 
@@ -114,13 +151,13 @@ export default function Home() {
           </div>
         </div> */}
         <div className='flex justify-center'>
-          <div className='absolute top-36 max-[280px]:top-[14rem] md:top-48 lg:top-96 z-30  flex flex-col items-center gap-3 '>
+          <div className='absolute top-[4.5rem] max-[280px]:top-[14rem] md:top-48 lg:top-96 z-30  flex flex-col items-center gap-3 '>
               <h1 className='shadow-lg text-xl text-center md:text-5xl text-white lg:text-[4.325rem] font-Lexend font-normal max-[280px]:text-sm'>WELCOME TO IDABO HOMES</h1>
               <p className='text-center CircularStd text-white text-xs md:text-2xl lg:text-[1.825rem] lg:leading-10 w-[21.5rem] max-[280px]:w-[16rem] md:w-[40rem] lg:w-[50rem]'>Luxurious waterfront living space specially curated to fill you with joy for your short, medium, and extended stay.</p>
           </div>
-          <div className='mb-14 lg:mb-56 mt-8 lg:mt-[20rem]'>
+          <div className='mb-14 lg:mb-56 mt-8 lg:mt-[20rem] absolute bottom-[2rem] '>
         <h1 className='text-center text-[#E0AC5F] text-[1rem] md:text-[2rem] lg:text-[2.5rem] CircularStd font-black'>Let Us welcome you Home!</h1>
-        <div className='flex justify-center mt-4 md:mt-8'>
+        <div className='flex justify-center mt-1 md:mt-8'>
           <Link href='/book'>
             <button className='w-[8.5rem] h-6 CircularStd md:w-[20rem] md:h-[4.75rem] lg:w-[26.125rem] lg:h-[4.75rem] rounded-[0.313rem] md:rounded-[0.625rem] text-white text-[0.375rem] md:text-xl lg:text-2xl font-Lexend font-semibold bg-[#DFAA5B]'>
               Book a stay Now
@@ -207,6 +244,80 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      
+        {/* <div>
+          <div className=' lg:w-[50rem] '>
+                <Carousel 
+                // renderArrowNext={renderCustomNextArrow}
+                // renderArrowPrev={renderCustomPrevArrow}
+                useKeyboardArrows={true}
+                showThumbs={false}
+                showStatus={false}
+                showIndicators={false}
+                autoPlay={true}
+                infiniteLoop={true}
+                
+                >
+                    <div>
+                        <Image
+                          src={Item1}
+                          alt="Item 1"
+                          className='rounded-2xl lg:rounded-3xl'
+                    />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item2}
+                          alt="Item 2"
+                          className='rounded-2xl lg:rounded-3xl'
+
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item3}
+                          alt="Item 3"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item4}
+                          alt="Item 4"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item5}
+                          alt="Item 5"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item6}
+                          alt="Item 6"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item7}
+                          alt="Item 7"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={Item8}
+                          alt="Item 8"
+                          className='rounded-2xl lg:rounded-3xl'
+                        />
+                      </div>
+                </Carousel>
+          </div>
+          </div> */}
     </main>
   )
 }

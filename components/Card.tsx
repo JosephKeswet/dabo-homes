@@ -33,7 +33,7 @@ const Card = ({image,mainText,subText,route}: Props) => {
             </Link>
           </div>
           <div className=' flex justify-center items-center mt-0 lg:mt-10'>
-            <p className='text-left CircularStd text-white text-[0.375rem] md:text-2xl lg:text-[1.32rem]  w-[8rem] md:w-[26rem] lg:w-[35.5rem] CircularStd font-medium leading-[0.375rem] '>{subText}</p>
+            <p className='text-left CircularStd text-white text-[0.375rem] md:text-2xl lg:text-[1.2rem]  w-[8rem] md:w-[26rem] lg:w-[35.5rem] CircularStd font-medium leading-[0.375rem] '>{subText}</p>
           </div>
         </div>
     </div>

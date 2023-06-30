@@ -8,18 +8,28 @@ import CalendarIcon from '../assets/icons/Calendar.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '@/components/Navbar'
-import Bedroom2 from '../assets/Bedroom2.jpg';
-import Bedroom3 from '../assets/Bedroom3.jpg';
-import Bedroom4 from '../assets/Bedroom4.jpg';
-import Bedroom5 from '../assets/Bedroom5.jpg';
-import Bedroom6 from '../assets/Bedroom6.jpg';
+import Item1 from '../assets/new/Item1.jpg'
+import Item2 from '../assets/new/Item2.jpg';
+import Item3 from '../assets/new/Item3.jpg';
+import Item4 from '../assets/new/Item4.jpg';
+import Item5 from '../assets/new/Item5.jpg';
+import Item6 from '../assets/new/Item6.jpg';
+import Item7 from '../assets/new/Item7.jpg';
+import Item8 from '../assets/new/Item8.jpg';
+import Item9 from '../assets/new/Item9.jpg';
+
+
+
+
+
+
 
 
 type Props = {}
@@ -79,7 +89,7 @@ const handleDateChange2 = (date2:any) => {
     return (
     <div
     onClick={onClickHandler} 
-    className='absolute  top-[50%] md:top-[45%]  lg:top-[32rem] left-[85%] lg:left-[90%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+    className='absolute  top-[50%] md:top-[45%]  lg:top-[20rem] left-[85%] lg:left-[90%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
         <FontAwesomeIcon icon={faChevronRight} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
     </div>)
 }
@@ -89,7 +99,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         <div>
             <div 
             onClick={onClickHandler}
-            className='absolute z-30 top-[50%] md:top-[45%] lg:top-[32rem] left-[4%] lg:left-[3%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+            className='absolute z-30 top-[50%] md:top-[45%] lg:top-[20rem] left-[4%] lg:left-[3%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
                 <FontAwesomeIcon icon={faChevronLeft} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
             </div>
         </div>
@@ -224,13 +234,13 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
             </div>
         </div>
 
-        <div className='relative top-20 w-[18.875rem] md:w-[45rem] lg:w-[55.2rem] h-[15rem] md:h-[40rem] lg:h-[29.375rem] bg-[#DFAA5BED] rounded-[0.625rem] md:rounded-[4.125rem] lg:rounded-[4.125rem] lg:top-[20rem]'>
-                    <div className='absolute z-50 CircularStd flex justify-center items-center  bg-[#00000078] rounded-[0.625rem] lg:rounded-[1.25rem] left-3 md:left-10 md:top-4 lg:left-10 top-0 lg:top-[-5rem] opacity-70 w-[6.4rem] h-[2.325rem] md:w-[8rem] md:h-[4rem] lg:w-[18.325rem] lg:h-[5.6rem] '>
+        <div className='relative top-20 w-[18.875rem] md:w-[45rem] lg:w-[55.2rem] h-[10rem] md:h-[40rem] lg:h-[29.375rem]  rounded-[0.625rem] md:rounded-[4.125rem] lg:rounded-[4.125rem] lg:top-[20rem]'>
+                    <div className='absolute z-50 CircularStd flex justify-center items-center  bg-[#00000078] rounded-[0.625rem] lg:rounded-[1.25rem] left-3 md:left-10 md:top-4 lg:left-10  bottom-[11rem] lg:top-[-16rem] opacity-70 w-[6.4rem] h-[2.325rem] md:w-[8rem] md:h-[4rem] lg:w-[18.325rem] lg:h-[5.6rem] '>
                       <div className='flex justify-center items-center text-sm md:text-lg lg:text-[2rem] text-white'>
-                        <h1>N300,000/day</h1>
+                        <h1>N250,000/day</h1>
                       </div>
                     </div>
-          <div className='absolute bottom-12 md:bottom-[7rem] lg:bottom-0 lg:top-[-17.675rem] '>
+          <div className='absolute bottom-0   md:bottom-[7rem] lg:bottom-0 lg:top-[-17.675rem] '>
                 <Carousel 
                 renderArrowNext={renderCustomNextArrow}
                 renderArrowPrev={renderCustomPrevArrow}
@@ -240,46 +250,73 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                 showIndicators={false}
                 autoPlay={true}
                 infiniteLoop={true}
+                
                 >
                     <div>
-                    <Image src={LivingroomLarge} alt='Bedroom'                     
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
-                    />
-                    </div>
-                    <div>
-                    <Image src={LivingroomLarge} alt='Bedroom'                     
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
-                    />
-                    </div>
-                    {/* <div>
-                    <Image src={Bedroom2} alt='Bedroom'                     
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+    <Image
+      src={Item1}
+      alt="Item 1"
+      className='rounded-2xl lg:rounded-3xl'
+/>
+  </div>
+  <div>
+    <Image
+      src={Item2}
+      alt="Item 2"
+      className='rounded-2xl lg:rounded-3xl'
 
-                    />
-                    </div>
-                    <div>
-                    <Image src={Bedroom3} alt='Bedroom'
-                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item3}
+      alt="Item 3"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item4}
+      alt="Item 4"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item5}
+      alt="Item 5"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item6}
+      alt="Item 6"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item7}
+      alt="Item 7"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  <div>
+    <Image
+      src={Item8}
+      alt="Item 8"
+      className='rounded-2xl lg:rounded-3xl'
+    />
+  </div>
+  {/* <div>
+    <Image
+      src={Item9}
+      alt="Item 9"
+      className=""
+    />
+  </div> */}
 
-                    />
-                    </div>
-                    <div>
-                    <Image src={Bedroom4} alt='Bedroom'
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
-                    
-                    />
-                    </div>
-                    <div>
-                    <Image src={Bedroom5} alt='Bedroom' 
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
-                  
-                    />
-                    </div>
-                    <div>
-                    <Image src={Bedroom6} alt='Bedroom'
-                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
-                    />
-                    </div> */}
                 </Carousel>
           </div>
           {/* <div className=' flex justify-center items-center mx-4 lg:mx-24 mt-[11rem] md:mt-[30rem] lg:mt-[55rem]'>
