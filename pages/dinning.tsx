@@ -49,7 +49,7 @@ const Dinning = (props: Props) => {
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
-                autoPlay={true}
+                autoPlay={false}
                 infiniteLoop={true}
                 >
                     <div>
@@ -67,7 +67,10 @@ const Dinning = (props: Props) => {
                 </Carousel>
             </div>
             <div className='mx-11 lg:mx-[10.5rem] mb-[5rem] lg:mb-[6.44rem]'>
-                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>Our Suite has a comfortable king size bed, dinning area, a sitting area with separate desk and and chairs, bathroom with…</p>
+                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>Family and friends are not left out in our apartment
+plans, sit and eat together away from home but just 
+like home with our six-seat capacitated dining set.
+</p>
             </div>
             <div className='mb-14  lg:mb-56'>
                 <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>

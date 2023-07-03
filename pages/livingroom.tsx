@@ -42,7 +42,7 @@ const Livingroom = (props: Props) => {
           </div>
         </div>
         <div className='mt-7 lg:mt-16'>
-            <h1 className='text-center md:text-[2rem] lg:text-[2.5rem] text-[#DFAA5B] lg:font-extrabold mb-3 lg:mb-16'>Our Bedroom</h1>
+            <h1 className='text-center md:text-[2rem] lg:text-[2.5rem] text-[#DFAA5B] lg:font-extrabold mb-3 lg:mb-16'>Our Livingroom</h1>
             <div className='mx-6 max-[280px]:mx-2 md:mx-9 lg:mx-12 mb-4 lg:mb-24'>
                 <Carousel 
                 renderArrowNext={renderCustomNextArrow}
@@ -83,9 +83,9 @@ const Livingroom = (props: Props) => {
                 </Carousel>
             </div>
             <div className='mx-11 lg:mx-[10.5rem] mb-[5rem] lg:mb-[6.44rem]'>
-                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>Possessing a spacious environ, our living rooms are properly equipped with a 72inch TV set, a proper set of Sofas, a dinning section, bean bags
-and adorned with the best of artworks to your 
-taste.  </p>
+                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>Possessing a spacious environ, our living rooms
+are adequately equipped with double air conditioners, a 65inch TV set, sofas, mini library, and a lounge facing 
+the waterview and adorned with the best of artworks.</p>
             </div>
             <div className='mb-14  lg:mb-56'>
                 <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>

@@ -48,7 +48,7 @@ const Kitchen = (props: Props) => {
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
-                autoPlay={true}
+                autoPlay={false}
                 infiniteLoop={true}
                 >
                     <div>
@@ -66,10 +66,10 @@ const Kitchen = (props: Props) => {
                 </Carousel>
             </div>
             <div className='mx-11 lg:mx-[10.5rem] mb-[5rem] lg:mb-[6.44rem]'>
-                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>We know how it can be being away from home but
-our well-equipped, Ensuite Kitchen will bring home
-to you, it is fully stacked with pots, plates, an electric
-cooker, dishwasher and many more</p>
+                <p className='text-center text-[#000000] text-[0.625rem] md:text-[2rem] lg:text-[2rem] font-Inter font-medium '>We know how being away from home can be, but our
+well-equipped kitchen will bring home to you; it is 
+fully stacked with kitchenware, an air conditioner
+a two-seater dining table and a water heater.e</p>
             </div>
             <div className='mb-14  lg:mb-56'>
                 <h1 className='text-center text-[#957554] text-[1rem] md:text-[2rem] lg:text-[2rem] font-Lexend font-semibold'>Let Us welcome you Home!</h1>
