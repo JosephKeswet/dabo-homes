@@ -24,6 +24,7 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import Head from 'next/head'
 
 
 
@@ -88,6 +89,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
   ]
   const Facilities = (img:any) => (
     <div>
+      
         <div className='flex flex-col md:gap-5 lg:gap-6 items-center'>
             <div className='w-2 h-3 md:w-auto lg:w-auto'>
               <Image
@@ -105,6 +107,10 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
     <main
       className=''
     >
+      <Head>
+        <title>Idabohomes</title>
+        <meta name="description" content="This is my apartment booking site" />
+      </Head>
       <div className="relative inset-0 bg-[url('../assets/HomeBackground.svg')] w-auto h-[18.5rem] 
       max-[280px]:h-[25rem] max-[280px]:bg-center
       max-[540px]:bg-cover
