@@ -39,7 +39,7 @@ export default function Home() {
     return (
     <div
     onClick={onClickHandler} 
-    className=' bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+    className='absolute  top-[50%] md:top-[45%]  lg:top-[32rem] left-[85%] lg:left-[90%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
         <FontAwesomeIcon icon={faChevronRight} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
     </div>)
 }
@@ -49,7 +49,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         <div>
             <div 
             onClick={onClickHandler}
-            className=' bg-[#D9D9D9C9] rounded-full cursor-pointer'>
+            className='absolute z-30 top-[50%] md:top-[45%] lg:top-[32rem] left-[4%] lg:left-[3%] flex justify-center items-center w-[2rem] h-[2rem] md:w-[5rem] md:h-[5rem] lg:w-[5.25rem] lg:h-[5.25rem] bg-[#D9D9D9C9] rounded-full cursor-pointer'>
                 <FontAwesomeIcon icon={faChevronLeft} className='w-4 h-4  md:w-[2rem] md:h-[2rem] lg:w-[3.625rem] lg:h-[3.575rem] text-white'/>
             </div>
         </div>
@@ -251,79 +251,68 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
         </div>
       </div>
       
-        {/* <div>
-          <div className=' lg:w-[50rem] '>
+      {/* <div className=' mt-7 lg:mt-16'>
+            <div className='mx-6 lg:mx-12 mb-4 lg:mb-24'>
                 <Carousel 
-                // renderArrowNext={renderCustomNextArrow}
-                // renderArrowPrev={renderCustomPrevArrow}
+                renderArrowNext={renderCustomNextArrow}
+                renderArrowPrev={renderCustomPrevArrow}
                 useKeyboardArrows={true}
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
                 autoPlay={true}
                 infiniteLoop={true}
-                
                 >
                     <div>
-                        <Image
-                          src={Item1}
-                          alt="Item 1"
-                          className='rounded-2xl lg:rounded-3xl'
+                    <Image src={Item1} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    
                     />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item2}
-                          alt="Item 2"
-                          className='rounded-2xl lg:rounded-3xl'
-
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item3}
-                          alt="Item 3"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item4}
-                          alt="Item 4"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item5}
-                          alt="Item 5"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item6}
-                          alt="Item 6"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item7}
-                          alt="Item 7"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={Item8}
-                          alt="Item 8"
-                          className='rounded-2xl lg:rounded-3xl'
-                        />
-                      </div>
+                    </div>
+                    <div>
+                    <Image src={Item2} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item3} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item4} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item5} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item6} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item7} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item8} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Item9} alt='Kitchen' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+            
                 </Carousel>
-          </div>
-          </div> */}
+            </div>
+        </div> */}
     </main>
   )
 }
