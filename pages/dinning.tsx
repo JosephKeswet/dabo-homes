@@ -6,6 +6,11 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import Dinning2 from '../assets/Dinning2.jpg';
 import Dinning3 from '../assets/Dinning3.jpg';
+import Dinning4 from '../assets/new/DinningX2.png';
+import Dinning5 from '../assets/new/DinningX1.jpeg';
+import Dinning6 from '../assets/new/DinningroomX3.png';
+
+
 
 
 type Props = {}
@@ -53,16 +58,31 @@ const Dinning = (props: Props) => {
                 infiniteLoop={true}
                 >
                     <div>
-                    <Image src={Dinning2} alt='Kitchen' 
+                    <Image src={Dinning2} alt='Dinning' 
                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
                     
                     />
                     </div>
                     <div>
-                    <Image src={Dinning3} alt='Kitchen' 
+                    <Image src={Dinning3} alt='Dinning' 
                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
                     />
                     </div>
+                    <div>
+                    <Image src={Dinning4} alt='Dinning' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Dinning5} alt='Dinning' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    {/* <div>
+                    <Image src={Dinning6} alt='Dinning' 
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div> */}
             
                 </Carousel>
             </div>

@@ -4,7 +4,10 @@ import Image from 'next/image'
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import Kitchen2 from '../assets/Kitchen2.jpg';
+import Kitchen1 from '../assets/Kitchen2.jpg';
+import Kitchen2 from '../assets/new/KitchenX1.png';
+
+
 
 
 type Props = {}
@@ -52,7 +55,7 @@ const Kitchen = (props: Props) => {
                 infiniteLoop={true}
                 >
                     <div>
-                    <Image src={Kitchen2} alt='Kitchen' 
+                    <Image src={Kitchen1} alt='Kitchen' 
                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
                     
                     />

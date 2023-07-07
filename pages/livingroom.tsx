@@ -9,6 +9,9 @@ import Livingroom3 from '../assets/Livingroom3.jpg';
 import Livingroom4 from '../assets/Livingroom4.jpg';
 import Livingroom5 from '../assets/Livingroom5.jpg';
 import Livingroom6 from '../assets/Livingroom6.jpg';
+import Livingroom7 from '../assets/new/LivingroomX1.png';
+import Livingroom8 from '../assets/new/LivingroomX2.png';
+
 
 type Props = {}
 
@@ -77,6 +80,16 @@ const Livingroom = (props: Props) => {
                     </div>
                     <div>
                     <Image src={Livingroom6} alt='Bedroom'
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Livingroom7} alt='Bedroom'
+                    className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
+                    />
+                    </div>
+                    <div>
+                    <Image src={Livingroom8} alt='Bedroom'
                     className='h-[16.35rem] max-[280px]:h-[14rem] md:h-[40rem] lg:h-[55.825rem] rounded-[0.625rem]'
                     />
                     </div>
