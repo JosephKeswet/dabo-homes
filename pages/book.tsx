@@ -15,12 +15,12 @@ import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '@/components/Navbar'
-import Item1 from '../assets/new/Item1.jpg'
-import Item2 from '../assets/new/Item2.jpg';
-import Item3 from '../assets/new/Item3.jpg';
-import Item4 from '../assets/new/Item4.jpg';
-import Item5 from '../assets/new/Item5.jpg';
-import Item6 from '../assets/new/Item6.jpg';
+import Item1 from '../assets/new/DinningX1.jpeg'
+import Item2 from '../assets/new/DinningX2.png';
+import Item3 from '../assets/new/Livingroomx1.png';
+import Item4 from '../assets/new/LivingroomX2.png';
+import Item5 from '../assets/new/LivingroomX3.png';
+import Item6 from '../assets/new/KitchenX1.png';
 import Item7 from '../assets/new/Item7.jpg';
 import Item8 from '../assets/new/Item8.jpg';
 import Item9 from '../assets/new/Item9.jpg';
@@ -253,12 +253,12 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
                 
                 >
                     <div>
-    <Image
-      src={Item1}
-      alt="Item 1"
-      className='rounded-2xl lg:rounded-3xl'
-/>
-  </div>
+                        <Image
+                          src={Item1}
+                          alt="Item 1"
+                          className='rounded-2xl lg:rounded-3xl'
+                    />
+                      </div>
   <div>
     <Image
       src={Item2}
@@ -267,41 +267,35 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
 
     />
   </div>
-  <div>
+  {/* <div>
     <Image
       src={Item3}
       alt="Item 3"
       className='rounded-2xl lg:rounded-3xl'
     />
-  </div>
-  <div>
+  </div> */}
+  {/* <div>
     <Image
       src={Item4}
       alt="Item 4"
       className='rounded-2xl lg:rounded-3xl'
     />
-  </div>
-  <div>
+  </div> */}
+  {/* <div>
     <Image
       src={Item5}
       alt="Item 5"
       className='rounded-2xl lg:rounded-3xl'
     />
-  </div>
-  <div>
+  </div> */}
+  {/* <div>
     <Image
       src={Item6}
       alt="Item 6"
       className='rounded-2xl lg:rounded-3xl'
     />
-  </div>
-  <div>
-    <Image
-      src={Item7}
-      alt="Item 7"
-      className='rounded-2xl lg:rounded-3xl'
-    />
-  </div>
+  </div> */}
+
   <div>
     <Image
       src={Item8}
@@ -309,13 +303,13 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
       className='rounded-2xl lg:rounded-3xl'
     />
   </div>
-  {/* <div>
+  <div>
     <Image
       src={Item9}
       alt="Item 9"
-      className=""
+      className="lg:h-[600px]"
     />
-  </div> */}
+  </div>
 
                 </Carousel>
           </div>
