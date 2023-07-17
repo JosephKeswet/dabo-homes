@@ -307,7 +307,7 @@ const renderCustomPrevArrow = (onClickHandler:any, hasNext:any, label:any) => {
     <Image
       src={Item9}
       alt="Item 9"
-      className="lg:h-[600px]"
+      className="h-[200px] md:h-[500px] lg:h-[600px]"
     />
   </div>
 
